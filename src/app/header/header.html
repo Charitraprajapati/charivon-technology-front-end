@@ -1,0 +1,31 @@
+<nav class="navbar">
+
+    <!-- side logo -->
+    <div class="logo">
+        <img src="/charivon-main-image.png"  class="logo-image">Charivon Technologies
+    </div>
+
+    <ul>
+        <li><a href="#" routerLink="home">Home</a></li>
+        <div style="display: inline-block;  cursor: pointer; --rotate: 0deg;" 
+            onmouseenter="this.style.setProperty('--rotate', '180deg')" 
+            onmouseleave="this.style.setProperty('--rotate', '0deg')">
+                <li>
+                    <a  routerLink="whatwedo">What We Do
+                        <!-- <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                            style="transition: transform 0.3s ease; transform: rotate(var(--rotate));">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg> -->
+                    </a>
+                </li>
+                
+        </div>
+        
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Industries</a></li>
+        <li><a href="#">Insights</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
