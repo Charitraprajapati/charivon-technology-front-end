@@ -9,5 +9,5 @@ import { Footer } from './footer/footer';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Charivon-Technologies');
+  protected readonly title = signal('Charivon-software-solution');
 }

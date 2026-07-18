@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "Charivon-Technologies": {
+    "Charivon-software-solution": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -65,10 +65,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Charivon-Technologies:build:production"
+              "buildTarget": "Charivon-software-solution:build:production"
             },
             "development": {
-              "buildTarget": "Charivon-Technologies:build:development"
+              "buildTarget": "Charivon-software-solution:build:development"
             }
           },
           "defaultConfiguration": "development"

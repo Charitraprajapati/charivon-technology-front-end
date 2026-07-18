@@ -5,18 +5,20 @@ import { Home } from './home/home';
 
 
 export const routes: Routes = [
-            {
-
-                path:'', redirectTo:'middle', pathMatch:'full'
-            },
-            {
-                path:'middle', component:Middle
-            },
+            // {
+            //     path:'', redirectTo:'middle', pathMatch:'full'
+            // },
             {
                 path:'whatwedo', component:Whatwedo
 
             },
             {
-                path : 'home',redirectTo:'middle', pathMatch:'full'
-            }
+                path : 'home', component:Middle
+            },
+            {
+                path:'',  component:Middle
+            },
+           
+           
+            
 ];
