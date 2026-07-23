@@ -8,10 +8,10 @@ export const routes: Routes = [
             // {
             //     path:'', redirectTo:'middle', pathMatch:'full'
             // },
-            // {
-            //     path:'whatwedo', component:Whatwedo
+            {
+                path:'whatwedo', component:Whatwedo
 
-            // },
+            },
             {
                 path : 'home', component:Middle
             },

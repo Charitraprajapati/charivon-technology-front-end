@@ -1,1 +1,169 @@
-<p>whatwedo works!</p>
+<div class="mega-menu">
+
+    <div class="mega-container">
+
+        <!-- Left Panel -->
+        <div class="left-panel">
+
+            <h2>
+                Transforming Ideas into Digital Excellence
+            </h2>
+
+            <p>
+                Charivon Software Solution delivers enterprise-grade software,
+                cloud solutions and AI-powered applications that help businesses
+                accelerate digital transformation.
+            </p>
+
+            <button class="explore-btn">
+                Explore All Services →
+            </button>
+
+        </div>
+
+        <!-- Middle Panel -->
+
+        <div class="middle-panel">
+
+            <ul>
+
+
+                 <li
+                    (mouseenter)="changeMenu('industries')"
+                    [class.active]="selectedMenu=='industries'">
+
+                    <span>Industries</span>
+
+                    <span>›</span>
+
+                </li>
+
+                <li
+                    (mouseenter)="changeMenu('services')"
+                    [class.active]="selectedMenu=='services'">
+
+                    <span>Services</span>
+
+                    <span>›</span>
+
+                </li>
+
+                <li
+                    (mouseenter)="changeMenu('technologies')"
+                    [class.active]="selectedMenu=='technologies'">
+
+                    <span>Technologies</span>
+
+                    <span>›</span>
+
+                </li>
+
+               
+
+                <li
+                    (mouseenter)="changeMenu('products')"
+                    [class.active]="selectedMenu=='products'">
+
+                    <span>Products</span>
+
+                    <span>›</span>
+
+                </li>
+
+                <li
+                    (mouseenter)="changeMenu('consulting')"
+                    [class.active]="selectedMenu=='consulting'">
+
+                    <span>Consulting</span>
+
+                    <span>›</span>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Right Panel -->
+
+        <div class="right-panel">
+
+            @switch(selectedMenu){
+
+                @case('services'){
+
+                    <div class="content-grid">
+
+                        @for(item of menuData.services; track item){
+
+                            <a href="#">{{item}}</a>
+
+                        }
+
+                    </div>
+
+                }
+
+                @case('technologies'){
+
+                    <div class="content-grid">
+
+                        @for(item of menuData.technologies; track item){
+
+                            <a href="#">{{item}}</a>
+
+                        }
+
+                    </div>
+
+                }
+
+                @case('industries'){
+
+                    <div class="content-grid">
+
+                        @for(item of menuData.industries; track item){
+
+                            <a href="#">{{item}}</a>
+
+                        }
+
+                    </div>
+
+                }
+
+                @case('products'){
+
+                    <div class="content-grid">
+
+                        @for(item of menuData.products; track item){
+
+                            <a href="#">{{item}}</a>
+
+                        }
+
+                    </div>
+
+                }
+
+                @case('consulting'){
+
+                    <div class="content-grid">
+
+                        @for(item of menuData.consulting; track item){
+
+                            <a href="#">{{item}}</a>
+
+                        }
+
+                    </div>
+
+                }
+
+            }
+
+        </div>
+
+    </div>
+
+</div>
