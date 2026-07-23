@@ -1,0 +1,137 @@
+<section class="contact-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>CONTACT</span>
+
+            <h2>Let's Build Something Great Together</h2>
+
+            <p>
+                Have a project in mind? Get in touch with our team to discuss your
+                software development, cloud, AI, or digital transformation needs.
+            </p>
+
+        </div>
+
+        <div class="contact-wrapper">
+
+            <!-- Left Side -->
+
+            <div class="contact-info">
+
+                <div class="info-card">
+
+                    <i class="fas fa-map-marker-alt"></i>
+
+                    <div>
+
+                        <h3>Office</h3>
+
+                        <p>Indore, Madhya Pradesh, India</p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="fas fa-envelope"></i>
+
+                    <div>
+
+                        <h3>Email</h3>
+
+                        <p>{{contact.email}}</p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="fas fa-phone"></i>
+
+                    <div>
+
+                        <h3>Phone</h3>
+
+                        <p>{{contact.phone}}</p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="fas fa-clock"></i>
+
+                    <div>
+
+                        <h3>Business Hours</h3>
+
+                        <p>Mon - Fri : 9:00 AM - 6:00 PM</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="contact-form">
+
+                <form>
+
+                    <input
+                        type="text"
+                        placeholder="Full Name"
+                        [(ngModel)]="form.name"
+                        name="name">
+
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        [(ngModel)]="form.email"
+                        name="email">
+
+                    <input
+                        type="text"
+                        placeholder="Phone Number"
+                        [(ngModel)]="form.phone"
+                        name="phone">
+
+                    <input
+                        type="text"
+                        placeholder="Company Name"
+                        [(ngModel)]="form.company"
+                        name="company">
+
+                    <input
+                        type="text"
+                        placeholder="Subject"
+                        [(ngModel)]="form.subject"
+                        name="subject">
+
+                    <textarea
+                        rows="6"
+                        placeholder="Tell us about your project..."
+                        [(ngModel)]="form.message"
+                        name="message">
+                    </textarea>
+
+                    <button type="button" (click)="sendMessage()">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

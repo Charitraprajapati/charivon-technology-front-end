@@ -1,0 +1,33 @@
+<section class="industries-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>Industries</span>
+            <h2>Industries We Empower</h2>
+            <p>
+                We develop innovative software solutions that help organizations
+                across multiple industries accelerate digital transformation,
+                improve efficiency, and achieve sustainable growth.
+            </p>
+        </div>
+
+        <div class="industries-grid">
+
+            <div class="industry-card" *ngFor="let industry of industries">
+
+                <div class="icon">
+                    <i [class]="industry.icon"></i>
+                </div>
+
+                <h3>{{industry.title}}</h3>
+
+                <p>{{industry.description}}</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
